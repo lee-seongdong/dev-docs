@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6d51f739e05b1749",
+        "id": "dec7bfc346ec0e93",
         "type": "tabs",
         "children": [
           {
-            "id": "29f5842ad002d90c",
+            "id": "446d820a03e0fdb4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3. Resource/클라우드 네이티브/수평적 확장 가능한 서비스.md",
+                "file": "3. Resource/클라우드 네이티브/관리용이성.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3. Resource/클라우드 네이티브/수평적 확장 가능한 서비스.md",
+                "file": "3. Resource/클라우드 네이티브/관리용이성.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3. Resource/클라우드 네이티브/수평적 확장 가능한 서비스.md",
+                "file": "3. Resource/클라우드 네이티브/관리용이성.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3. Resource/클라우드 네이티브/수평적 확장 가능한 서비스.md"
+                "file": "3. Resource/클라우드 네이티브/관리용이성.md"
               }
             }
           },
@@ -156,24 +156,35 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "29f5842ad002d90c",
+  "active": "446d820a03e0fdb4",
   "lastOpenFiles": [
+    "3. Resource/클라우드 네이티브/유지보수성.md",
+    "3. Resource/클라우드 네이티브/관리용이성.md",
+    "3. Resource/클라우드 네이티브/느슨한 결합.md",
+    "3. Resource/클라우드 네이티브/신뢰성.md",
+    "3. Resource/클라우드 네이티브/탄력성.md",
+    "3. Resource/클라우드 네이티브/확장성.md",
     "3. Resource/클라우드 네이티브/클라우드 네이티브 속성.md",
+    "1. Project/공부중.md",
+    "3. Resource/클라우드 네이티브/클라우드 네이티브.md",
+    "3. Resource/Nginx/Nginx.md",
+    "3. Resource/Nginx/Http Header.md",
+    "3. Resource/kubernetes/Ingress.md",
+    "3. Resource/kubernetes/GSLB.md",
+    "3. Resource/kubernetes/ELB.md",
+    "3. Resource/kubernetes/Egress.md",
+    "3. Resource/Docker/Podman.md",
+    "3. Resource/Docker/Docker Engine.md",
+    "3. Resource/Docker/Docker Desktop.md",
+    "3. Resource/Docker/Docker CLI.md",
+    "3. Resource/Docker/Docker Daemon.md",
+    "3. Resource/클라우드 네이티브/수평적 확장 가능한 서비스.md",
     "3. Resource/클라우드 네이티브/업스트림 & 다운스트림.md",
     "3. Resource/클라우드 네이티브/클라우드 네이티브란.md",
-    "3. Resource/클라우드 네이티브/관리용이성.md",
     "무제 파일.canvas",
     "5. Attached File",
-    "3. Resource/클라우드 네이티브/확장성.md",
     "index.md",
-    "3. Resource/클라우드 네이티브/수평적 확장 가능한 서비스.md",
     "publish/cate1/cate1.md",
-    "publish/cate1/cate1_cont1.md",
-    "publish/cate1/클라우드 네이티브 Go/클라우드 네이티브란.md",
-    "[확장성.md",
-    "3. Resource/클라우드 네이티브/관찰가능성.md",
-    "3. Resource/클라우드 네이티브/탄력성.md",
-    "3. Resource/클라우드 네이티브/느슨한 결합.md",
-    "Obsidian Vault/Untitled mindmap.md"
+    "publish/cate1/cate1_cont1.md"
   ]
 }
