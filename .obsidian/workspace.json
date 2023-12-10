@@ -1,0 +1,179 @@
+{
+  "main": {
+    "id": "bac0c0605362efc8",
+    "type": "split",
+    "children": [
+      {
+        "id": "6d51f739e05b1749",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "29f5842ad002d90c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3. Resource/클라우드 네이티브/수평적 확장 가능한 서비스.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "66ccd6487faee7a8",
+    "type": "split",
+    "children": [
+      {
+        "id": "6fd3ffc4e0d04032",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "65491fee1da78f93",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d7e40bb73e7804bc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f91fb0371a48e9ec",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 271.5
+  },
+  "right": {
+    "id": "a7a4fa52eb5d1752",
+    "type": "split",
+    "children": [
+      {
+        "id": "fab448ec1be7e36e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1f1e61e36a8d2916",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "3. Resource/클라우드 네이티브/수평적 확장 가능한 서비스.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "403dfe668b583f1b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "3. Resource/클라우드 네이티브/수평적 확장 가능한 서비스.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b0b638c34ec884c3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "9afad5df12353951",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "3. Resource/클라우드 네이티브/수평적 확장 가능한 서비스.md"
+              }
+            }
+          },
+          {
+            "id": "ff6a00ae6894adb5",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 639.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "29f5842ad002d90c",
+  "lastOpenFiles": [
+    "3. Resource/클라우드 네이티브/클라우드 네이티브 속성.md",
+    "3. Resource/클라우드 네이티브/업스트림 & 다운스트림.md",
+    "3. Resource/클라우드 네이티브/클라우드 네이티브란.md",
+    "3. Resource/클라우드 네이티브/관리용이성.md",
+    "무제 파일.canvas",
+    "5. Attached File",
+    "3. Resource/클라우드 네이티브/확장성.md",
+    "index.md",
+    "3. Resource/클라우드 네이티브/수평적 확장 가능한 서비스.md",
+    "publish/cate1/cate1.md",
+    "publish/cate1/cate1_cont1.md",
+    "publish/cate1/클라우드 네이티브 Go/클라우드 네이티브란.md",
+    "[확장성.md",
+    "3. Resource/클라우드 네이티브/관찰가능성.md",
+    "3. Resource/클라우드 네이티브/탄력성.md",
+    "3. Resource/클라우드 네이티브/느슨한 결합.md",
+    "Obsidian Vault/Untitled mindmap.md"
+  ]
+}
