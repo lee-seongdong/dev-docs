@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3. Resource/클라우드 네이티브/관리용이성.md",
+                "file": "3. Resource/클라우드 네이티브/클라우드 네이티브 속성.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3. Resource/클라우드 네이티브/관리용이성.md",
+                "file": "3. Resource/클라우드 네이티브/클라우드 네이티브 속성.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3. Resource/클라우드 네이티브/관리용이성.md",
+                "file": "3. Resource/클라우드 네이티브/클라우드 네이티브 속성.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3. Resource/클라우드 네이티브/관리용이성.md"
+                "file": "3. Resource/클라우드 네이티브/클라우드 네이티브 속성.md"
               }
             }
           },
@@ -142,7 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 639.5
+    "width": 567.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -158,6 +158,9 @@
   },
   "active": "446d820a03e0fdb4",
   "lastOpenFiles": [
+    "3. Resource/클라우드 네이티브/클라우드 네이티브.md",
+    "3. Resource/클라우드 네이티브/클라우드 네이티브란.md",
+    "3. Resource/클라우드 네이티브/관찰가능성.md",
     "3. Resource/클라우드 네이티브/유지보수성.md",
     "3. Resource/클라우드 네이티브/관리용이성.md",
     "3. Resource/클라우드 네이티브/느슨한 결합.md",
@@ -166,7 +169,6 @@
     "3. Resource/클라우드 네이티브/확장성.md",
     "3. Resource/클라우드 네이티브/클라우드 네이티브 속성.md",
     "1. Project/공부중.md",
-    "3. Resource/클라우드 네이티브/클라우드 네이티브.md",
     "3. Resource/Nginx/Nginx.md",
     "3. Resource/Nginx/Http Header.md",
     "3. Resource/kubernetes/Ingress.md",
@@ -180,11 +182,9 @@
     "3. Resource/Docker/Docker Daemon.md",
     "3. Resource/클라우드 네이티브/수평적 확장 가능한 서비스.md",
     "3. Resource/클라우드 네이티브/업스트림 & 다운스트림.md",
-    "3. Resource/클라우드 네이티브/클라우드 네이티브란.md",
     "무제 파일.canvas",
     "5. Attached File",
     "index.md",
-    "publish/cate1/cate1.md",
-    "publish/cate1/cate1_cont1.md"
+    "publish/cate1/cate1.md"
   ]
 }
