@@ -158,17 +158,18 @@
   },
   "active": "446d820a03e0fdb4",
   "lastOpenFiles": [
+    "3. Resource/Go/go_study/study_06_operator/go.mod",
+    "3. Resource/Go/go_study/study_06_operator/main.go",
+    "3. Resource/Go/go_study/study_06_operator",
+    "3. Resource/Go/go_study/study_05_standardio/go.mod",
+    "3. Resource/Go/go_study/study_05_standardio/main.go",
+    "3. Resource/Go/go_study/study_05_standardio",
+    "3. Resource/Go/go_study/study_04_variable/main.go",
+    "3. Resource/Go/go_study/study_04_variable/go.mod",
+    "3. Resource/Go/go_study/study_04_variable",
+    "3. Resource/Go/go_study/04variable/main.go",
+    "3. Resource/Go/go_study/04variable/go.mod",
     "3. Resource/Go/go_study/study.md",
-    "3. Resource/Go/go_study/hello/go.mod",
-    "3. Resource/Go/go_study/greetings/go.mod",
-    "3. Resource/Go/go_study/hello/hello.go",
-    "3. Resource/Go/go_study/hello",
-    "3. Resource/Go/go_study/greetings/greetings.go",
-    "3. Resource/Go/go_study/greetings",
-    "3. Resource/Go/go_study/greetings.go",
-    "3. Resource/Go/go_study/go.sum",
-    "3. Resource/Go/go_study/go.mod",
-    "3. Resource/Go/go_study/basic.go",
     "3. Resource/클라우드 네이티브/클라우드 네이티브.md",
     "3. Resource/클라우드 네이티브/클라우드 네이티브란.md",
     "3. Resource/클라우드 네이티브/관찰가능성.md",
@@ -193,7 +194,6 @@
     "3. Resource/Docker/Docker Daemon.md",
     "3. Resource/클라우드 네이티브/수평적 확장 가능한 서비스.md",
     "3. Resource/클라우드 네이티브/업스트림 & 다운스트림.md",
-    "무제 파일.canvas",
-    "index.md"
+    "무제 파일.canvas"
   ]
 }
