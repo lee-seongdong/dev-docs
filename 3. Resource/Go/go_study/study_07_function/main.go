@@ -31,6 +31,8 @@ func fibo(n int) int {
 }
 
 func main() {
+	// func 첫글자가 대문자인 경우 public으로 취급
+
 	fmt.Println(add(3, 6))
 	fmt.Println(divide(4, 2))
 
