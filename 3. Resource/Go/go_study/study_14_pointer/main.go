@@ -6,7 +6,7 @@ import (
 
 type Data struct {
 	value int
-	data  [200]int
+	data  [10]int
 }
 
 type User struct {
@@ -16,12 +16,12 @@ type User struct {
 
 func changeData(arg Data) {
 	arg.value = 999
-	arg.data[100] = 999
+	arg.data[5] = 999
 }
 
 func changeData2(arg *Data) {
 	(*arg).value = 999 // 편의상 arg.value도 동일하게 동작한다.
-	(*arg).data[100] = 999
+	(*arg).data[5] = 999
 }
 
 func testClearInstance() {
@@ -62,13 +62,13 @@ func main() {
 	changeData(data)
 
 	fmt.Println("data.value :", data.value)
-	fmt.Println("data.data[100] :", data.data[100])
+	fmt.Println("data.data[5] :", data.data[5])
 
 	fmt.Println()
 	fmt.Println("함수에서 인자의 값을 변경하려면(call by reference), 인자의 주소를 넘겨야한다.")
 	changeData2(&data)
 	fmt.Println("data.value :", data.value)
-	fmt.Println("data.data[100] :", data.data[100])
+	fmt.Println("data.data[5] :", data.data[5])
 
 	fmt.Println()
 	fmt.Println("#구조체 포인터 초기화")
