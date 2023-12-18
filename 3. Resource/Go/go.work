@@ -1,0 +1,7 @@
+go 1.21.5
+
+use (
+    ./go_study/study_20_interface
+    ./go_study/study_21_function2
+    ./go_study/study_22_datastructure
+)
