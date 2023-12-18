@@ -1,11 +1,2 @@
----
-mindmap-plugin: basic
----
-
-- aa
-	- bb
-	- ccc
-	- dd
-		- eeeee
-	- aa
-	- 222
+- 로컬에서 [[Docker Daemon]]과 상호작용 하기 위한 클라이언트 도구
+- 내부적으로 명령어를 [[Docker API]]에 대응시켜 [[Docker Daemon]]과 상호작용

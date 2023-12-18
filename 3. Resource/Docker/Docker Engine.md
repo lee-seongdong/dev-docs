@@ -1,4 +1,5 @@
-애플리케이션을 구축하고, 컨테이너화 하기 위한 오픈 소스 기술.
-
-- [[Docker Daemon]]
-- [[Docker CLI]]
+- [[Docker]] 를 사용하기 위해 제공되는 핵심 컴포넌트로, 클라이언트-서버 아키텍처로 구성되어있다.
+- 구성요소
+	- ![[Docker Daemon]]
+	- ![[Docker API]]
+	- ![[Docker CLI]]

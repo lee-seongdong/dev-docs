@@ -1,0 +1,2 @@
+- [[Docker Daemon]]과 [[Docker CLI]]간의 통신을 위한 인터페이스
+- RESTful API로 구성되어있어, 외부에서도 [[Docker Daemon]]과 상호작용할 수 있다.

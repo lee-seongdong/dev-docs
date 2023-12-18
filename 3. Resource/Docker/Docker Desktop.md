@@ -1,0 +1,8 @@
+- Windows, Mac 등 로컬환경을 위한 통합 환경을 제공하는 응용프로그램
+- 구성요소
+	- 리눅스 가상환경
+	- [[Docker Engine]]
+	- Docker Buildx
+	- Docker Compose
+	- Kubernetes
+	- ...
