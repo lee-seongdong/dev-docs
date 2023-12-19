@@ -1,0 +1,2 @@
+- Mac 에서 Linux 환경을 실행할 수 있는 기능
+- git : https://github.com/lima-vm/lima

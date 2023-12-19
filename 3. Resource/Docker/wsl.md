@@ -1,0 +1,3 @@
+- Windows 에서 Linux 환경을 실행할 수 있는 기능
+- wsl + docker + vscode 자습서 : https://learn.microsoft.com/ko-kr/windows/wsl/tutorials/wsl-containers
+- docker + vscode 자습서 : https://learn.microsoft.com/ko-kr/training/modules/use-docker-container-dev-env-vs-code/4-exercise-add-development-container
