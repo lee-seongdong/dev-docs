@@ -4,4 +4,5 @@ use (
     ./go_study/study_20_interface
     ./go_study/study_21_function2
     ./go_study/study_22_datastructure
+    ./go_study/study_23_error
 )
