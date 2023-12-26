@@ -1,0 +1,2 @@
+- 효율적인 [[렌더링]]을 위해 사용하는 메모리상의 DOM
+- [[Previous Virtual DOM|이전 Virtual DOM]]과 [[Current Virtual DOM|현재 Virtual DOM]]으로 이루어진다.

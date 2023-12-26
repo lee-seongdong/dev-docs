@@ -1,0 +1,2 @@
+- [[Reconciliation]]으로 업데이트된 [[Current Virtual DOM|현재 Virtual DOM]]을 실제 DOM에 반영하는 과정
+- 효율적인 DOM 조작을 위해 Batch Update 방식을 사용

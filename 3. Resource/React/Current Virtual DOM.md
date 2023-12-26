@@ -1,0 +1,1 @@
+- 현재 컴포넌트의 [[State|상태]]나 [[Props|속성]]을 기반으로 저장되는 Virtual DOM

@@ -1,0 +1,2 @@
+- SEO : Search Engine Optimization
+- 웹페이지가 검색엔진에서 잘 찾을 수 있도록 하는 작업

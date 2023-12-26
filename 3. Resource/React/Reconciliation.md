@@ -1,0 +1,1 @@
+- [[Diffing]]으로 변경을 찾고, [[Current Virtual DOM|현재 Virtual DOM]]을 업데이트 하는 과정
