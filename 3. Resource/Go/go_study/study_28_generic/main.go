@@ -62,7 +62,14 @@ type Numeric interface {
 	Inteager | Float
 }
 
-// 타입 파라미터에 타입 제한을 두면 빈 인터페이스의 문제를 해결할 수 있음
+// 제네릭 타입
+type Node[T any] struct {
+	val  T
+	next *Node[T]
+}
+
+// 타입 파라미터에 타입 제한을 두면 빈 인터페이스의 문제를 해결할 수 있음 (가능한 연산을 미리 알 수 있다)
+// 언박싱 없이 값을 바로 사용 가능하다
 func min2[T int | int16 | int32 | uint8 | uint16 | uint32 | float32 | float64](a, b T) T {
 	if a < b {
 		return a
@@ -90,6 +97,18 @@ func Map[F, T any](s []F, f func(F) T) []T {
 		rst[i] = f(v)
 	}
 	return rst
+}
+
+func NewNode[T any](v T) *Node[T] {
+	return &Node[T]{
+		val: v,
+	}
+}
+
+func (n *Node[T]) Push(v T) *Node[T] {
+	node := NewNode(v) // 타입 추론으로 [T] 생략 가능
+	n.next = node
+	return node
 }
 
 func main() {
@@ -120,4 +139,18 @@ func main() {
 		return strings.ToUpper(v)
 	})
 	fmt.Println(uppered)
+
+	n1 := NewNode[int](1) // 타입추론으로 [int] 생략 가능
+	n2 := NewNode(2)
+	n3 := NewNode(3)
+	n1.next = n2
+	n2.next = n3
+
+	n3.Push(4).Push(5).Push(6)
+
+	next := n1
+	for next != nil {
+		fmt.Print(next.val, " ")
+		next = next.next
+	}
 }
