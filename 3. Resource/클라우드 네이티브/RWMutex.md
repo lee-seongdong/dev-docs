@@ -1,0 +1,2 @@
+- WriteLock : ReadLock과 WriteLock이 없을 떄 만 WriteLock을 걸 수 있음
+- WriteUnlock 상태 : 여러 프로세스들이 동시에 ReadLock을 걸 수 있음
