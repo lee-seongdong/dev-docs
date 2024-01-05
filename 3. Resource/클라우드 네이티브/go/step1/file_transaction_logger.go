@@ -91,7 +91,7 @@ func (l *FileTransactionLogger) Run() {
 				errors <- err
 			}
 
-			l.wg.Wait()
+			l.wg.Done()
 		}
 	}()
 }

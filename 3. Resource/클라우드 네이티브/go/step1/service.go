@@ -12,6 +12,13 @@ import (
 
 var transactionLogger TransactionLogger
 
+func loggingMiddleware(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		log.Println(r.Method, r.RequestURI)
+		next.ServeHTTP(w, r)
+	})
+}
+
 func helloGoHandler(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("Hello net/http!\\n"))
 }
@@ -38,9 +45,9 @@ func keyValuePutHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	transactionLogger.WritePut(key, string(value))
-
 	w.WriteHeader(http.StatusCreated)
+	transactionLogger.WritePut(key, string(value))
+	log.Printf("PUT key=%s\n", key)
 }
 
 func keyValueGetHandler(w http.ResponseWriter, r *http.Request) {
@@ -59,6 +66,7 @@ func keyValueGetHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.Write([]byte(value))
+	log.Printf("GET key=%s\n", key)
 }
 
 func keyValueDeleteHandler(w http.ResponseWriter, r *http.Request) {
@@ -72,6 +80,7 @@ func keyValueDeleteHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	transactionLogger.WriteDelete(key)
+	log.Printf("DELETE key=%s\n", key)
 }
 
 func initializeTransactionLog() error {
@@ -83,7 +92,7 @@ func initializeTransactionLog() error {
 	}
 
 	events, errors := transactionLogger.ReadEvents()
-	e, ok := Event{}, true
+	count, e, ok := 0, Event{}, true
 
 	for ok && err == nil {
 		select {
@@ -91,15 +100,19 @@ func initializeTransactionLog() error {
 		case e, ok = <-events:
 			switch e.EventType {
 			case EventDelete:
+				log.Printf("DELETE %s\n", e.Key)
 				err = Delete(e.Key)
+				count++
 			case EventPut:
+				log.Printf("PUT %s : %s\n", e.Key, e.Value)
 				err = Put(e.Key, e.Value)
+				count++
 			}
 		}
 	}
 
+	log.Printf("%d events replayed\n", count)
 	transactionLogger.Run()
-
 	return err
 }
 
@@ -116,6 +129,7 @@ func Step1() {
 
 	// gorillaMux
 	r := mux.NewRouter()
+	r.Use(loggingMiddleware)
 	r.HandleFunc("/", helloMuxHandler)
 	r.HandleFunc("/v1/{key}", keyValuePutHandler).Methods("PUT")
 	r.HandleFunc("/v1/{key}", keyValueGetHandler).Methods("GET")
