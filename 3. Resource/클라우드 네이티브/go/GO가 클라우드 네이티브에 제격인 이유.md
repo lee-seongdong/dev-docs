@@ -1,0 +1,5 @@
+- Go 바이너리는 런타임이 필요하지 않다.
+	- 단, CGO_ENABLED=0 GOOS=linux go build -a . 과 같이 빌드해야함
+	- CGO_ENABLED=0 : C Go 비활성화. C바인딩을 정적으로 링크하여 바이너리가 외부 의존성을 갖지 않도록 함
+	- GOOS=linux : 빌드 운영체제를 linux로 지정
+	- -a : 모든 라이브러리를 새롭게 빌드하도록 강제함

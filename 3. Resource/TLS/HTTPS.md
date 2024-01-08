@@ -1,0 +1,3 @@
+- HTTP over [[TLS]] (or HTTP over Secure)
+- HTTP 프로토콜 위에 [[TLS]] (or [[SSL]])를 사용하여 보안 계층을 추가한 프로토콜
+- 데이터의 기밀성과 무결성을 제공하여 데이터 탈취나 조작 방지
