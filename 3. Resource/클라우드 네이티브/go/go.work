@@ -1,9 +1,9 @@
 go 1.21.5
 
 use (
-    .
     ./ex01_file_logger
     ./ex02_db_logger
     ./ex03_lru_cache
     ./ex04_synchronize
+    ./ex05_grpc
 )
