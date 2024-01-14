@@ -6,4 +6,5 @@ use (
     ./ex03_lru_cache
     ./ex04_synchronize
     ./ex05_grpc
+    ./ex06_hexarch
 )
