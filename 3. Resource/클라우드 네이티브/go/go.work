@@ -15,4 +15,5 @@ use (
     ./ex12_config_with_viper
     ./ex13_feature_flag
     ./ex14_otel_trace
+    ./ex16_zap_logger
 )
