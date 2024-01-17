@@ -7,4 +7,12 @@ use (
     ./ex04_synchronize
     ./ex05_grpc
     ./ex06_hexarch
+    ./ex07_flag
+    ./ex08_cobra
+    ./ex09_json_encoding
+    ./ex10_yaml_encoding
+    ./ex11_reload_config
+    ./ex12_config_with_viper
+    ./ex13_feature_flag
+    ./ex14_otel_trace
 )
