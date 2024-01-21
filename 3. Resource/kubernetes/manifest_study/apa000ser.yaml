@@ -1,0 +1,15 @@
+apiVersion: v1 # core/v1 = v1. core는 생략해야 한다
+kind: Service
+metadata:
+  name: apa000ser
+spec:
+  type: NodePort
+  ports: # 네트워크 접근 순서는 워커노드 -> 서비스 -> 컨테이너 순
+  - protocol: TCP
+    nodePort: 30080 # 워커노드의 포트. 30000 ~ 32767 사이의 값
+    port: 8099 # 서비스의 포트
+    targetPort: 80 # 컨테이너의 포트
+  # 디플로이먼트에서는 '레이블 셀렉터'를 사용하여 조건부 셀렉터 설정이 가능 (matchLabels)
+  # 서비스에서는 리소스를 직접 지정하기 때문에 레이블을 그대로 기재
+  selector:
+    app: apa000kube 

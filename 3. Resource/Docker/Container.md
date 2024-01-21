@@ -1,5 +1,6 @@
 - 독립적이고 격리된 환경에서 실행되는 소프트웨어 패키지
 - [[Virtual Machine|가상머신]]과 유사한 격리기술 이지만, 리눅스 Namespaces 기술을 이용해 가상화의 오버헤드가 더 적고 가볍게 실행될 수 있다.
+- [[Container Lifecycle]]
 - 컨테이너 기술의 종류
 	- [[Docker]]
 	- RKT(Rocket) : App Container 스펙을 사용하며, 가벼우면서도 보안성이 강조됨

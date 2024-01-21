@@ -6,3 +6,6 @@
 	- Docker Compose
 	- Kubernetes
 	- ...
+- Docker Desktop 유료화에 따른 대안
+	- windows : [[wsl]] + [[Docker Engine]]
+	- mac : [[lima]] + [[Docker Engine]]

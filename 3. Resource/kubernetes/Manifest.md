@@ -1,0 +1,9 @@
+- 파드나 서비스에 대한 설정
+- 매니페스트는 주로 yaml 파일로 작성하여 kubernetes에 업로드하며, kubernets는 이를 etcd에 '바람직한 상태'로 등록함
+- 매니페스트 파일 작성 방법
+	- 매니페스트 파일은 [[Kubernetes Resource|리소스]]단위로 작성 (---로 구분하거나 여러 파일로 작성)
+	- 주 항목
+		- apiVersion : API 그룹 및 버전
+		- kind : [[Kubernetes Resource|리소스]] 유형
+		- metadata : 메타데이터. name, labels, uid 등
+		- spec : [[Kubernetes Resource|리소스]] 내용
