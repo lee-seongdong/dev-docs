@@ -1,0 +1,7 @@
+- 1계층 / [[물리 계층]] / Physical Layer
+- 2계층 / [[데이터 링크 계층]] / Data Link Layer
+- 3계층 / [[네트워크 계층]] / Network Layer
+- 4계층 / [[3. Resource/Network/OSI 계층/전송 계층|전송 계층]] / Transport Layer
+- 5계층 / [[세션 계층]] / Session Layer
+- 6계층 / [[표현 계층]] / Presentation Layer
+- 7계층 / [[응용 계층]] / Application Layer
