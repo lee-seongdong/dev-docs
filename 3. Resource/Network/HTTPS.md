@@ -1,5 +1,5 @@
-- HTTP over [[TLS]] (or HTTP over Secure)
-- HTTP 프로토콜과 [[TLS]]를 조합하여 보안 계층을 추가한 프로토콜
+- [[HTTP]] over [[TLS]] (or HTTP over Secure)
+- [[HTTP]] 와[[TLS]]를 조합하여 보안 계층을 추가한 프로토콜
 	- HTTP는 [[TCP IP 4계층]]의 응용 계층에서 동작
 	- [[TLS]]는 [[OSI 7계층]]의 세션 계층에서 동작
 - 데이터의 기밀성과 무결성을 제공하여 데이터 탈취나 조작 방지

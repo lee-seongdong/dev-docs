@@ -2,7 +2,12 @@
 - 버전
 	- IPv4
 		- 길이 : 32비트
-		- Network ID와 Host ID로 나뉨. NetMask로 Network ID의 길이를 지정
+		- 종류
+			- Global IP
+			- Private IP
+			- Loopback
+			- Broadcast IP
+		- ​- Network ID와 Host ID로 나뉨. NetMask로 Network ID의 길이를 지정
 			- IP : 192.168.10.14 
 			- NetMask : 255.255.255.0 (24비트)
 			- Network ID : 192.168.10.0
