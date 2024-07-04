@@ -12,8 +12,8 @@ public class RedisConnectionPool {
 	public RedisConnectionPool() {
 		ClientResources clientResources = DefaultClientResources.create();
 
-		RedisURI node1 = RedisURI.create("10.113.160.141", 22899);
-		RedisURI node2 = RedisURI.create("10.113.160.141", 22909);
+		RedisURI node1 = RedisURI.create("127.0.0.1", 6623);
+		RedisURI node2 = RedisURI.create("127.0.0.1", 6624);
 
 		clusterClient = RedisClusterClient.create(clientResources, Arrays.asList(node1, node2));
 
