@@ -1,5 +1,5 @@
 ## Spring Retry
-retry 정책은 back를 포함하는 것이 좋다.
+retry 정책은 backoff를 포함하는 것이 좋다.
 ```java
 @Slf4j
 @Component
