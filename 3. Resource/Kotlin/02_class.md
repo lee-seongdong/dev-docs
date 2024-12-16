@@ -107,5 +107,58 @@
             get() {
                 return age >= 18
             }
+        
+        // backing field
+        var counter = 0
+            set(value) {
+                if (value >= 0) {
+                    // counter = value 사용 시 무한 루프 (setter 재귀호출)
+                    field = value // field 키워드로 setter 호출 방지 (backing field)
+                }
+            }
     }
+    ```
+- Extension
+  - 기존 클래스를 수정하지 않고, 새로운 프로퍼티나 함수를 추가할 수 있는 기능. 특히 서드파티 라이브러리에 사용될때 유용하다.
+  - Extension Function
+    ```kotlin
+    class Student(private val id: String, val name: String) {
+    }
+
+    fun Student.speak() {
+        // println("Hello, my id is $id") // private 접근 불가
+        println("Hello, my name is $name")
+    }
+    ```
+  - Extension은 정적으로 결정되므로, 선언된 타입에 따라 확장함수나 프로퍼티를 호출한다.
+    ```kotlin
+    open class BaseClass
+    class SubClass : BaseClass()
+
+    fun BaseClass.printExtension() {
+        println("BaseClass Extension")
+    }
+
+    fun SubClass.printExtension() {
+        println("SubClass Extension")
+    }
+
+    val c = SubClass()
+    c.printExtension() // SubClass Extension
+
+    val c: BaseClass = SubClass()
+    c.printExtension() // BaseClass Extension
+    ```
+  - Companion Object에도 적용이 가능하다.
+    ```kotlin
+    class BaseClass {
+        companion object {}
+    }
+
+    fun BaseClass.Companion.print() {
+        println("static extension fun")
+    }
+
+    BaseClass.Companion.print()
+    BaseClass.print() // .Companion은 생략이 가능함
     ```

@@ -4,7 +4,7 @@
       println("hello, world")
   }
   ```
-- 상수 val (불변)
+- val (불변)
   ```kotlin
   // 선언 후 초기화
   val a: Int
@@ -16,7 +16,7 @@
   // 선언 및 초기화(타입추론)
   val c = 12
   ```
-- 변수 var (가변)
+- var (가변)
   ```kotlin
   // 선언 후 초기화
   var a: Int
@@ -27,6 +27,36 @@
 
   // 선언 및 초기화(타입추론)
   var c = 12
+  ```
+- const val (상수)
+  ```kotlin
+  const val SYSTEM_NAME: String = "MyApp"
+  ```
+- lateinit
+  ```kotlin
+  lateinit var text: String // var 에만 사용 가능하고, Primitive Type에는 사용할 수 없다
+  print(text) // Error!
+
+  text = "text1"
+  print(text) // text1
+
+  text = "text2"
+  print(text) // text2
+  ```
+- by lazy
+  ```kotlin
+  lateinit var text: String
+  val textLength by lazy { // val 에만 사용 가능하다.
+    text.length
+  }
+
+  print(textLength) // Error!
+
+  text = "test"
+  print(textLength) // 4
+
+  text = "testtest"
+  print(textLength) // 4
   ```
 - if : if도 식이기 때문에, 값을 반환한다.  
   ```kotlin
