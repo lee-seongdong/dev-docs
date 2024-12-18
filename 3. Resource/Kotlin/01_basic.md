@@ -171,3 +171,22 @@
     ```kotlin
     if (str == null) error("str is null") // error()로 직접 예외 발생
     ```
+destructuring : componentN() 연산자가 구현되어있는 객체에 한하여, 여러개의 값으로 분해할 수 있는 기능
+  ```kotlin
+  class Person {
+      var name: String = ""
+      var age: Int = 0
+
+      // componentN 연산자
+      operator fun component1(): String {
+          return name
+      }
+      
+      // componentN 연산자  
+      operator fun component2(): Int {
+          return age
+      }
+  }
+
+  val (name, age) = Person().apply { name = "Alice"; age = 30 } // 구조분해
+  ```

@@ -120,6 +120,7 @@
     ```
 - Extension
   - 기존 클래스를 수정하지 않고, 새로운 프로퍼티나 함수를 추가할 수 있는 기능. 특히 서드파티 라이브러리에 사용될때 유용하다.
+  - 확장할 대상 타입 객체를 수신객체타입 이라고 한다.
   - Extension Function
     ```kotlin
     class Student(private val id: String, val name: String) {
@@ -162,3 +163,26 @@
     BaseClass.Companion.print()
     BaseClass.print() // .Companion은 생략이 가능함
     ```
+- Delegation
+  ```kotlin
+  interface Base {
+      fun printMessage()
+      fun printMessage2()
+  }
+
+  class BaseImpl(val x: Int): Base {
+      override fun printMessage() {print(x)}
+      override fun printMessage2() {print("base")}
+  }
+
+  // 코틀린은 상속 대신 위임 적용할 수 있는 기능을 제공함
+  // 위임은 by 키워드로 사용할 수 있다. Base는 반드시 interface여야 한다
+  class Drived(val b: Base): Base by b {
+      override fun printMessage2() {print("driven")}
+  }
+
+  val base = BaseImpl(10)
+  Drived(base).printMessage() // 10
+  Drived(base).printMessage2() // driven
+  ```
+- Companion object : 클래스 내부에 정의된 객체로, 해당 클래스의 static 맴버 역할을 한다.

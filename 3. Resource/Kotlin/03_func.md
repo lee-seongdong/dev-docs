@@ -77,3 +77,33 @@
   // 3. 함수타입의 파라미터가 하나의 매개변수만 사용하는 경우, it 키워드로 대체가능
   listOf(1, 2, 3, 4, 5).forEach { print(it) }
   ```
+- Extension Lambda
+  - 
+- scope function
+  - 주어진 객체에 대한 scope function을 호출하면, 임시 블록을 생성하고, 여기에서는 주어진 객체를 이름없이 접근 가능하다.
+  - 이때, scope function을 호출한 객체를 수신객체라 한다.
+  - scope function 종류 : apply, also, run, let, with 등
+    ```kotlin
+    // 1. apply : 수신객체를 this로 사용하고, 수신객체를 반환
+    // 객체의 초기화 및 설정에 적합
+    val person = Person().apply {
+        name = "Lee"
+        age = 20
+    }
+
+    // 2. also : 수신객체를 파라미터로 전달하여 사용하고, 수신객체를 반환
+    // 객체를 수정하지않는 부가작업에 적합
+    val text = "Hello".also { print(it) } // text = Hello
+
+    // 3. run : 수신객체를 this로 사용하고, 람다 결과값을 반환
+    // 객체와 관련된 작업을 수행한 후 값을 반환할 때 적합
+    val graterThanZero = 10.run { this > 0 }
+
+    // 4. let : 수신객체를 파라미터로 전달하여 사용하고, 람다 결과값을 반환
+    // 수신객체를 변환하거나, null check에 적합
+    val length = "Hello".let { it.length }
+
+    // 5. with : 수신객체를 this로 사용하고, 람다의 결과값을 반환
+    // 수신객체를 컨텍스트로 작업을 수행할때 적합
+    val graterThanZero = with(10) { this > 0 }
+    ```
