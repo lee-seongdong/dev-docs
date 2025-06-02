@@ -1,6 +1,6 @@
 ## Elasticsearch
-Apache Lucene 기반의 java 오픈소스 분산 검색엔진  
-검색을 위해 단독으로 사용되기도 하지만, 주로 Elastic Stack으로 사용
+Apache Lucene 기반의 분산 검색엔진  
+검색을 위해 단독으로 사용되기도 하지만, 주로 Elastic Stack으로 사용  
 - Elasticsearch: 데이터 저장 및 검색
 - Logstash: 다양한 소스로부터 데이터 수집, 집계, 파싱하여 Elasticsearch로 전달
 - Beats: 경량 데이터 수집기로 다양한 소스에서 데이터를 수집하여 Elasticsearch로 전달
@@ -19,3 +19,19 @@ Apache Lucene 기반의 java 오픈소스 분산 검색엔진
 - **Replica**: 데이터 가용성과 장애 복구를 위한 샤드 복제본
 - **Index**: 데이터를 저장하는 논리적 공간
 - **Document**: Elasticsearch에서 저장되는 기본 데이터 단위
+
+
+- 목차
+1.1. OpenSearch의 등장 배경 및 Elasticsearch와의 차이점
+1.2. Cluster 구조
+1.3. Node
+  1.3.1. Hot-Warm Architecture
+1.4. Index
+  1.4.1. Index Template
+  1.4.2. Index Policy (ILM / ISM)
+  1.4.3. Index State
+1.5. Document
+1.6. Shard
+1.7. Replica
+1.8. Mapping & Field Type ✅ (추천 추가)
+1.9. Storage 및 store.size vs pri.store.size ✅ (추천 추가)
