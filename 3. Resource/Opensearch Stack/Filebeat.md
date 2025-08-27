@@ -1,19 +1,19 @@
-## Filebeat
+# Filebeat
 파일의 변화를 실시간으로 감지하고, Logstash 또는 Opensearch로 전송하는 경량 agent
 
 
-### 1. 구성요소
-#### - Input
+## 1. 구성요소
+### 1.1. Input
 - 설정된 경로를 주기적으로 폴링하여 새 파일이 생겼는지, 기존 파일의 변경이 있는지 확인하는 컴포넌트
 - 새 파일이나 변경된 파일을 감지하면, Harvester를 생성함
 
-#### - Harvester
+### 1.2. Harvester
 - 파일의 새 라인을 실시간으로 수집하는 컴포넌트
 - 각 파일마다 새로운 Harvester가 생성되어 실행되며, 수집된 로그는 이벤트로 만들어 Spooler로 전달
 - 파일의 상태는 registry에 저장되어, 로그 유실없이 수집할 수 있음
 - `clean_removed`나 `clean_inactivate` 설정으로 registry가 너무 커지지 않게 설정할 수 있음
 
-#### - Queue
+### 1.3. Queue
 - Harvester로 부터 받은 이벤트를 배치처리 하기 위한 컴포넌트
 - 설정된 이벤트 수 혹은 일정 시간마다 이벤트들을 Output으로 전달
 - 기본적으로 메모리 기반으로 동작하지만, `queue.disk` 설정을 통해 디스크기반으로 동작하게 설정할 수 있음
@@ -22,11 +22,11 @@
   - 비동기 모드(default) : 효율적인 배치처리
   - 동기 모드 (`flush.min_events: 1` or `flush.timeout: 0s` 로 설정) : 실시간 처리
 
-#### - Output (Publisher)
+### 1.4. Output (Publisher)
 - 넘겨받은 이벤트들을 Logstash, Opensearch, Kafka 등으로 전송하는 컴포넌트
 
 
-### 설정 예시:
+## 2. 설정 예시:
 ```yaml
 # Input 설정
 filebeat.inputs:

@@ -1,12 +1,12 @@
-## Logstash
+# Logstash
 실시간 파이프라이닝 기능을 가진 데이터수집 엔진  
 서로 다른 소스의 데이터(이벤트)를 동적으로 통합하고, 원하는 대상으로 데이터를 정규화 할 수 있음  
 플러그인 기반으로 동작하며, 3단계로 처리한다.
 
-### 1. Input
+## 1. Input
 데이터를 수집할 소스를 정의하는 단계. 여러 소스로부터 데이터를 전달받을 수 있다.
 
-#### Plugins
+### Plugins
 | Plugin          | 설명                         | 사용 예                              |
 | --------------- | -------------------------- | --------------------------------- |
 | `beats`         | Filebeat 등 Beats로부터 이벤트 수신 | Filebeat → Logstash 파이프라인 연결 시 사용 |
@@ -21,7 +21,7 @@
 | `http_poller`   | HTTP로 주기적으로 API 호출         | 외부 REST API 연동 시 사용               |
 
 
-#### 예시
+### 예시
 ```conf
 input {
   beats {
@@ -42,10 +42,10 @@ input {
 }
 ```
 
-### 2. Filter
+## 2. Filter
 수집한 데이터 가공 및 정규화하는 단계
 
-#### Plugins
+### Plugins
 | Plugin    | 역할 요약                | 주요 사용 예시                        |
 | --------- | ---------------------- | ------------------------------- |
 | `if/else` | 조건부 처리                 | 로그 레벨별로 필터나 태그를 다르게 적용          |
@@ -58,7 +58,7 @@ input {
 | `date`    | 날짜 문자열을 타임스탬프로 변환      | 커스텀 타임스탬프 필드를 `@timestamp`로 설정  |
 
 
-#### 예시
+### 예시
 ```conf
 filter {
   if [status] == "404" {
@@ -92,10 +92,10 @@ filter {
 > grok 패턴 예약어 종류 : https://github.com/elastic/elasticsearch/blob/main/libs/grok/src/main/resources/patterns/legacy/grok-patterns
 
 
-### 3. Output
+## 3. Output
 가공 및 정규화된 데이터를 최종 목적지로 전달하는 단계. 여러 목적지로 전달할 수 있다.
 
-#### Plugins
+### Plugins
 | Plugin                | 설명                                  | 주요 사용 예시                |
 | --------------------- | ------------------------------------ | ------------------------- |
 | `elasticsearch`       | 이벤트를 Elasticsearch 또는 OpenSearch에 전송 | 수집된 로그를 Elasticsearch로 전송 |
@@ -106,7 +106,7 @@ filter {
 | `s3`                  | AWS S3 버킷에 로그 업로드                    | 장기 보관 로그 백업               |
 | `loggly`, `datadog` 등 | 서드파티 SaaS 로그 플랫폼에 로그 전송              | SaaS 기반 로그 분석             |
 
-#### 예시
+### 예시
 ```conf
 output {
   if [log_type] == "access-log" {
